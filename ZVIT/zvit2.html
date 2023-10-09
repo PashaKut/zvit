@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Звіт</title>
+    <style>
+      *,
+      *:before,
+      *:after {
+        box-sizing: inherit;
+      }
+      html {
+        box-sizing: border-box;
+      }
+      h3,
+      h5 {
+        color: white;
+      }
+      table {
+        background-color: rgb(183, 168, 142);
+      }
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+      .back {
+        background-color: darkgray;
+      }
+      .page {
+        margin: 0 auto;
+        max-width: 1200px;
+        background-color: #693d3d;
+        padding: 15px;
+      }
+      body {
+        background-color: #46211a;
+      }
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .title-and-group {
+        width: calc(80%);
+        display: block;
+        margin: 0 auto;
+      }
+      .title-and-group h3 {
+        padding-top: 10px;
+      }
+
+      .foto {
+        width: calc(20%);
+        max-width: 150px;
+        max-height: 200px;
+      }
+      .labs th:hover {
+        background-color: white;
+      }
+
+      .screen-shots {
+        width: 50%;
+      }
+
+      .fillling {
+        color: aliceblue;
+        display: none;
+      }
+
+      a:link,
+      a:visited {
+        background-color: #ba5536;
+        color: white;
+        padding: 2px 0;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+      }
+
+      a:hover,
+      a:active {
+        background-color: #a43820;
+      }
+
+      .name {
+        display: none;
+      }
+
+      #_1:checked ~ #x1 {
+        display: block;
+      }
+
+      #_2:checked ~ #x2 {
+        display: block;
+      }
+
+      #_3:checked ~ #x3 {
+        display: block;
+      }
+      #_4:checked ~ #x4 {
+        display: block;
+      }
+      #_7:checked ~ #x7 {
+        display: block;
+      }
+      #_8:checked ~ #x8 {
+        display: block;
+      }
+      #_9:checked ~ #x9 {
+        display: block;
+      }
+      #_10:checked ~ #x10 {
+        display: block;
+      }
+
+      .data {
+        min-height: 450px;
+        padding: 2px 0;
+      }
+      .button {
+        border: 1px solid rgb(222, 214, 225);
+        font-style: italic;
+        float: left;
+        width: 20%;
+      }
+      .chackers {
+        float: left;
+        clear: left;
+      }
+
+      .data label {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <div class="container">
+        <div class="title-and-group">
+          <h3>Звіти з лабораторних робіт з дисципліни:</h3>
+          <h3>"ІНТЕРНЕТ ТЕХНОЛОГІЇ та ПРОЄКТУВАННЯ ВЕБ ЗАСТОСУВАНЬ"</h3>
+          <h5>Студент группи ІС-21 Кут Павло Олександрович</h5>
+        </div>
+        <img class="foto" src="screenshots/lab2/my_photo.jpg" alt="MyPhoto" />
+      </div>
+      <br />
+      <hr />
+      <br />
+      <table>
+        <tr class="labs">
+          <th><a href="zvit1.html">Лабораторна робота 1</a></th>
+          <th><a href="zvit2.html">Лабораторна робота 2</a></th>
+          <th><a href="">Лабораторна робота 3</a></th>
+          <th><a href="">Лабораторна робота 4</a></th>
+          <th><a href="">Лабораторна робота 5</a></th>
+          <th><a href="">Лабораторна робота 6</a></th>
+          <th><a href="">Лабораторна робота 7</a></th>
+          <th><a href="">Лабораторна робота 8</a></th>
+          <th><a href="">Лабораторна робота 9</a></th>
+        </tr>
+      </table>
+
+      <div class="data">
+        <br />
+        <input class="chackers" type="radio" name="type" id="_1" />
+        <label class="button" for="lab1"
+          >Постановка задачі, тема, <br />мета лабораторної роботи №2, <br />
+          Місце розташування сайту, звіту</label
+        >
+        <input class="chackers" type="radio" name="type" id="_2" />
+        <label class="button" for="lab1">Способи підключення стилів</label>
+        <input class="chackers" type="radio" name="type" id="_3" />
+        <label class="button" for="lab1">Селектори ідентифікаторів</label>
+        <input class="chackers" type="radio" name="type" id="_4" />
+        <label class="button" for="lab1">Селектори тегу і класу</label>
+        <input class="chackers" type="radio" name="type" id="_7" />
+        <label class="button" for="lab1">Інші селeктори</label>
+        <input class="chackers" type="radio" name="type" id="_8" />
+        <label class="button" for="lab1">Групування селекторів</label>
+        <input class="chackers" type="radio" name="type" id="_9" />
+        <label class="button" for="lab1"
+          >CSS: Шрифти Текст <br />Таблиці Фон Контур <br />
+          Списки СSS Просунутий</label
+        >
+        <input class="chackers" type="radio" name="type" id="_10" />
+        <label class="button" for="lab1">Висновки</label>
+
+        <span class="fillling" id="x1">
+          У програмному коді лабораторної работи №2 застосувати селектори тегу і
+          класу на свій розсуд. У програмному коду лабораторної роботи №2
+          застосувати ідентифікатори. На свій розсуд застосувати сусідні,
+          дочірні селектори, селектор атрибута та універсальний селектор. За
+          допомогою каскадних таблиць стилів виконати на свій розсуд стильове
+          оформлення текстових елементів. Показати як оформлюються:<br />
+          ⎯ списки,<br />
+          ⎯ різноманітні властивості кольору і фону,<br />
+          ⎯ зовнішні та внутрішні відступи<br /><br />
+          Тема: КАСКАДНІ ТАБЛИЦІ СТИЛІВ. СЕЛЕКТОРИ .ІДЕНТИФІКАТОРИ. СТИЛЬОВЕ
+          ОФОРМЛЕННЯ ТЕКСТОВИХ ЕЛЕМЕНТІВ В HTML- ДОКУМЕНТАХ.<br /><br />
+          Мета: придбати практичні навички роботи з селекторами,
+          ідентифікаторами, списками, різноманітними властивостями кольору і
+          фону, зовнішними та внутрішними відступами, плаваючими елементами,
+          оформленням текстових елементів
+          <br /><br />
+          <a href="https://github.com/PashaKut/LAB_WEB_2"
+            ><b>Місце розташування веб-застосунку</b></a
+          >
+          <a href="https://github.com/PashaKut/LAB_WEB_1"
+            ><b>Місце розташування звіту</b></a
+          >
+        </span>
+
+        <span class="fillling" id="x2">
+          <img
+            src="screenshots/lab2/style_element.jpg"
+            class="screen-shots"
+            alt="Style_element"
+          />
+          <img
+            src="screenshots/lab2/style_atribute.jpg"
+            class="screen-shots"
+            alt="Style_atribute"
+          />
+          <img
+            src="screenshots/lab2/style_file.jpg"
+            class="screen-shots"
+            alt="Style_file"
+          />
+        </span>
+        <span class="fillling" id="x3">
+          <img
+            src="screenshots/lab2/id_code.jpg"
+            alt="List"
+            class="screen-shots" />
+          <img
+            src="screenshots/lab2/id_page.jpg"
+            alt="List"
+            class="screen-shots"
+        /></span>
+        <span class="fillling" id="x4">
+          CSS селектор тегу<br />
+          <img
+            src="screenshots/lab2/tag-selector.jpg"
+            alt="List"
+            class="screen-shots"
+          /><br />
+          CSS селектор класу<br />
+          <img
+            src="screenshots/lab2/class-selector.jpg"
+            alt="List"
+            class="screen-shots"
+          />
+        </span>
+        <span class="fillling" id="x7">
+          <img
+            src="screenshots/lab2/other-selectors.jpg"
+            alt="List"
+            class="screen-shots"
+          />
+        </span>
+        <span class="fillling" id="x8">
+          <img
+            src="screenshots/lab2/selector-grouping.jpg"
+            alt="List"
+            class="screen-shots"
+          />
+        </span>
+        <span class="fillling" id="x9">
+          <img
+            src="screenshots/lab2/css_1.jpg"
+            alt="List"
+            class="screen-shots"
+          />
+          <img
+            src="screenshots/lab2/css_2.jpg"
+            alt="List"
+            class="screen-shots"
+          />
+          <img
+            src="screenshots/lab2/list_code.jpg"
+            alt="List"
+            class="screen-shots"
+          />
+          <img
+            src="screenshots/lab2/table_code.jpg"
+            alt="List"
+            class="screen-shots"
+          />
+          <img
+            src="screenshots/lab2/css_1_page.jpg"
+            alt="List"
+            class="screen-shots"
+          />
+          <img
+            src="screenshots/lab2/css_2_page.jpg"
+            alt="List"
+            class="screen-shots"
+          />
+          <img
+            src="screenshots/lab2/lists_page.jpg"
+            alt="List"
+            class="screen-shots"
+          />
+        </span>
+        <span class="fillling" id="x10">
+          <b>Висновок:</b>
+          <br /><br />
+          У ході виконання даної лабораторної роботи ми успішно досягли
+          поставленої мети - набули практичних навичок роботи з селекторами,
+          ідентифікаторами, списками, різноманітними властивостями кольору і
+          фону, зовнішніми та внутрішніми відступами, плаваючими елементами, а
+          також оформленням текстових елементів в HTML-документах.
+        </span>
+      </div>
+    </div>
+  </body>
+</html>

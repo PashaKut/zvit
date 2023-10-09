@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Звіт</title>
+    <style>
+      *,
+      *:before,
+      *:after {
+        box-sizing: inherit;
+      }
+      html {
+        box-sizing: border-box;
+      }
+      h3,
+      h5 {
+        color: white;
+      }
+      table {
+        background-color: rgb(183, 168, 142);
+      }
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+      .back {
+        background-color: darkgray;
+      }
+      .page {
+        margin: 0 auto;
+        max-width: 1200px;
+        background-color: #693d3d;
+        padding: 15px;
+      }
+      body {
+        background-color: #46211a;
+      }
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .title-and-group {
+        width: calc(80%);
+        display: block;
+        margin: 0 auto;
+      }
+      .title-and-group h3 {
+        padding-top: 10px;
+      }
+
+      .foto {
+        width: calc(20%);
+        max-width: 150px;
+        max-height: 200px;
+      }
+      .labs th:hover {
+        background-color: white;
+      }
+
+      .screen-shots {
+        width: 50%;
+      }
+
+      .fillling {
+        color: aliceblue;
+        display: none;
+      }
+
+      a:link,
+      a:visited {
+        background-color: #ba5536;
+        color: white;
+        padding: 2px 0;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+      }
+
+      a:hover,
+      a:active {
+        background-color: #a43820;
+      }
+
+      .name {
+        display: none;
+      }
+
+      #_1:checked ~ #x1 {
+        display: block;
+      }
+
+      #_2:checked ~ #x2 {
+        display: block;
+      }
+
+      #_3:checked ~ #x3 {
+        display: block;
+      }
+      #_4:checked ~ #x4 {
+        display: block;
+      }
+      #_5:checked ~ #x5 {
+        display: block;
+      }
+      #_6:checked ~ #x6 {
+        display: block;
+      }
+      #_7:checked ~ #x7 {
+        display: block;
+      }
+      #_8:checked ~ #x8 {
+        display: block;
+      }
+
+      .data {
+        min-height: 450px;
+        padding: 2px 0;
+      }
+      .button {
+        border: 1px solid rgb(222, 214, 225);
+        font-style: italic;
+        float: left;
+        width: 20%;
+      }
+      .chackers {
+        float: left;
+        clear: left;
+      }
+
+      .data label {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <div class="container">
+        <div class="title-and-group">
+          <h3>Звіти з лабораторних робіт з дисципліни:</h3>
+          <h3>"ІНТЕРНЕТ ТЕХНОЛОГІЇ та ПРОЄКТУВАННЯ ВЕБ ЗАСТОСУВАНЬ"</h3>
+          <h5>Студент группи ІС-21 Кут Павло Олександрович</h5>
+        </div>
+        <img class="foto" src="screenshots/lab2/my_photo.jpg" alt="MyPhoto" />
+      </div>
+      <br />
+      <hr />
+      <br />
+      <table>
+        <tr class="labs">
+          <th><a href="zvit1.html">Лабораторна робота 1</a></th>
+          <th><a href="zvit2.html">Лабораторна робота 2</a></th>
+          <th><a href="">Лабораторна робота 3</a></th>
+          <th><a href="">Лабораторна робота 4</a></th>
+          <th><a href="">Лабораторна робота 5</a></th>
+          <th><a href="">Лабораторна робота 6</a></th>
+          <th><a href="">Лабораторна робота 7</a></th>
+          <th><a href="">Лабораторна робота 8</a></th>
+          <th><a href="">Лабораторна робота 9</a></th>
+        </tr>
+      </table>
+
+      <div class="data">
+        <br />
+        <input class="chackers" type="radio" name="type" id="_1" />
+        <label class="button" for="lab1">
+          Опис предметного<br />середовища</label
+        >
+        <input class="chackers" type="radio" name="type" id="_2" />
+        <label class="button" for="lab1"
+          >Тема, Мета, Місце розташування лаби №1</label
+        >
+        <input class="chackers" type="radio" name="type" id="_7" />
+        <label class="button" for="lab1">Структура веб-сторінки</label>
+        <input class="chackers" type="radio" name="type" id="_3" />
+        <label class="button" for="lab1">HTML-код ТАБЛИЦЬ</label>
+        <input class="chackers" type="radio" name="type" id="_4" />
+        <label class="button" for="lab1">HTML-код ЗОБРАЖЕННЯ</label>
+        <input class="chackers" type="radio" name="type" id="_5" />
+        <label class="button" for="lab1">HTML-код ФОРМИ</label>
+        <input class="chackers" type="radio" name="type" id="_6" />
+        <label class="button" for="lab1">ВИСНОВОК</label>
+
+        <span class="fillling" id="x1">
+             <b> Мета: </b>
+      написання сайту з каталогом дебютів для гри в шахи. Довавання до сайту
+      відповідних елементів для зручного знаходження, зберігання та вивчення
+      дебютів. Актуалізація данних для зручності користувача.<br />
+      <br />
+      <b> Об'єктом дослідження є: </b>
+      пошукова система заточена на шахові дебюти.
+      <br />
+      <br />
+      <b> Предметом дослідження є: </b>
+      аналіз роботи існуючих шахових довідників. <br />
+      <br />
+      <b> Постановка задачі: </b> розробка веб-додатку, з допомогою якого
+      користувач знаходить перелік шахових дебютів, отримує можливість їх
+      зберігати та вивчати. Розробка алгоритмів зображення та вивчення шахових
+      ходів. 
+      <br />
+      <br />
+      <b>Бізнес логіка:</b> <br />
+    </p>
+    <p>Користувач:</p>
+
+    <ul>
+      <li>Реєстрація</li>
+      <li>Авторизація</li>
+      <li>Пошук дебютів</li>
+      <li>Пошук дебютів за категоріями</li>
+      <li>Додавання фільмів у список "Закладки"</li>
+      <li>Перегляд шахові теорії обраного дебюту</li>
+      <li>Проходження тестів для закріплення теорії</li>
+    </ul>
+    <p>Адміністратор</p>
+    <ul>
+      <li>Актуалізація інформації про шахові дебюти</li>
+      <li>Адміністрування користувацької бази данних</li>
+      <li>Тестування програми</li>
+    </ul>
+        </span>
+        <span class="fillling" id="x2">
+            <b>Тема лабораторної роботи:</b>
+            СТРУКТУРА HTML-ДОКУМЕНТА. ВИБІР ПРЕДМЕТНОЇ ГАЛУЗІ.
+            РОБОТА З ПОСИЛАННЯМИ, ТАБЛИЦЯМИ, ЗОБРАЖЕННЯМИ, СПИСКАМИ в HTML-ДОКУМЕНТІ.
+            <br><br>
+            <b>Мета лабораторної робти:</b>
+            придбати практичні навички роботи з HTML-документом, таблицями, ,
+            зображеннями, посиланнями, списками, формами
+            Створити шаблон звітного HTML-документом для відображення
+            результатів роботи всіх лабораторних робіт.
+            <br><br>
+            <a href="https://github.com/PashaKut/LAB_WEB_1"><b>Місце розташування веб-застосунку</b></a>
+        </span>
+        <span class="fillling" id="x7">
+          <img
+            src="screenshots/lab1/structure_1.jpg"
+            alt="Tables"
+            class="screen-shots" />
+          <img
+            src="screenshots/lab1/structure_2.jpg"
+            alt="Tables"
+            class="screen-shots"/>
+        </span>
+        <span class="fillling" id="x3">
+          <img
+            src="screenshots/lab1/table_code.jpg"
+            alt="Tables"
+            class="screen-shots" />
+          <img
+            src="screenshots/lab1/table_page.png"
+            alt="Tables"
+            class="screen-shots"/>
+        </span>
+        <span class="fillling" id="x4">
+          <img
+            src="screenshots/lab1/image_code.jpg"
+            alt="Image"
+            class="screen-shots"
+          />
+          <img
+            src="screenshots/lab1/form_page.jpg"
+            alt="Image"
+            class="screen-shots"
+          />
+        </span>
+        <span class="fillling" id="x5">
+          <img
+            src="screenshots/lab1/form_code.jpg"
+            alt="Form"
+            class="screen-shots"
+          />
+          <img
+            src="screenshots/lab1/form_page.jpg"
+            alt="Form"
+            class="screen-shots"
+          />
+        </span>
+        <span class="fillling" id="x6">
+         <b>Висновок:</b>
+         <br><br>
+         Під час виконання даної лабораторної роботи ми успішно досягли поставленої мети - придбали практичні навички роботи з HTML-документами, таблицями, зображеннями, посиланнями, списками та формами. Ми глибше розібралися зі структурою HTML-документу та вивчили як правильно організовувати вміст сторінки для досягнення оптимального результату.
+        </span>
+      </div>
+    </div>
+  </body>
+</html>
